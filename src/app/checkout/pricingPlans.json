@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Basic",
+    "price": 29,
+    "originalPrice": 58,
+    "headshots": 40,
+    "time": 3,
+    "isPopular": false,
+    "planId": "basic",
+    "dodoProductId": "pdt_WFDJKYopbGK8VEg3Nhvvx"
+  },
+  {
+    "name": "Professional",
+    "price": 39,
+    "originalPrice": 78,
+    "headshots": 100,
+    "time": 2,
+    "isPopular": true,
+    "planId": "professional",
+    "dodoProductId": "pdt_Q25mmOCtZCBrpVhgNiarE"
+  },
+  {
+    "name": "Executive",
+    "price": 59,
+    "originalPrice": 118,
+    "headshots": 200,
+    "time": 1,
+    "isPopular": false,
+    "planId": "executive",
+    "dodoProductId": "pdt_Pwg8Wl2z9Sr3OBvTXRIuG"
+  }
+]
