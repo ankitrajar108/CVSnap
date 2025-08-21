@@ -51,7 +51,7 @@ export async function createPrompt(userData: any) {
     try {
       const form = new FormData();
       form.append('prompt[text]', prompt.text);
-      form.append('prompt[callback]', `https://cvsnap.app/api/llm/prompt-webhook?webhook_secret=${webhookSecret}&user_id=${id}`);
+      form.append('prompt[callback]', `https://cv-snap.vercel.app/api/llm/prompt-webhook?webhook_secret=${webhookSecret}&user_id=${id}`);
       form.append('prompt[num_images]', imagePerPrompt);
 
       console.log('Form data:', Object.fromEntries(form.entries()));
