@@ -28,7 +28,7 @@ export default async function Signup({ searchParams }: SignupProps) {
       provider: "google",
       options: {
         // Use env value if available, otherwise default to localhost for dev
-        redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'}/auth/callback`,
+        redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cvsnap.app'}/auth/callback`,
       },
     });
 

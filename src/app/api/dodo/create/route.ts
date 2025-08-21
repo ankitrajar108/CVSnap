@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
         },
         payment_link: true,
         product_cart: [productWithQuantity],
-        return_url: `http://localhost:3000/postcheckout?session_id={CHECKOUT_SESSION_ID}`,
+        return_url: `https://cvsnap.app/postcheckout?session_id={CHECKOUT_SESSION_ID}`,
         metadata: {
           user_id: userId,
           ...metadata,
