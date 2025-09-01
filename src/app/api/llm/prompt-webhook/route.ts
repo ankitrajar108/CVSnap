@@ -99,19 +99,18 @@ export async function POST(request: Request) {
   }
 
   // Update this function to return different values based on plan type
-  const getAllowedPrompts = (planType: string): number => {
-    switch (planType.toLowerCase()) {
-      case 'professional':
-        return 100;
-      case 'executive':
-        return 200;
-      case 'basic':
+  const getAllowedPrompts = (planType: string) => {
+    switch (planType) {
+      case "basic":
+        return 8; // 8 prompts × 5 images = 40 headshots
+      case "professional":
+        return 10; // 10 prompts × 10 images = 100 headshots
+      case "executive":
+        return 10; // 10 prompts × 20 images = 200 headshots
       default:
-        return 10;
+        return 8;
     }
-  };
-
-  try {
+  };  try {
     console.log('Incoming webhook data:', JSON.stringify(incomingData, null, 2));
 
     const timestamp = new Date().toISOString();

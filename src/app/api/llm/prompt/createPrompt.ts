@@ -38,7 +38,7 @@ export async function createPrompt(userData: any) {
   const user = userData[0];
   const { id, planType } = user;
 
-  const imagePerPrompt = planType === "basic" ? "1" : planType === "professional" ? "10" : planType === "executive" ? "20" : "1";
+  const imagePerPrompt = planType === "basic" ? "5" : planType === "professional" ? "10" : planType === "executive" ? "20" : "5";
 
   const API_URL = `https://api.astria.ai/tunes/1504944/prompts`;
   const webhookSecret = process.env.APP_WEBHOOK_SECRET;

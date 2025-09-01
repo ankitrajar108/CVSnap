@@ -51,13 +51,13 @@ export async function fixDiscrepancy(userData: UserData | null) {
   const getPlanLimit = (planType: string) => {
     switch (planType.toLowerCase()) {
       case "basic":
-        return 10;
+        return 40;
       case "professional":
         return 100;
       case "executive":
         return 200;
       default:
-        return 0;
+        return 40;
     }
   };
 
