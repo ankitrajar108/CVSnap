@@ -21,7 +21,7 @@ export default async function Page() {
       workStatus === "ongoing" &&
       !apiStatus &&
       tuneStatus !== "ongoing" &&
-      tuneStatus !== "completed"
+      tuneStatus !== "complete"
     ) {
       await createTune(userData);
       // Send email - Message to users: "Done, please wait...""
@@ -48,7 +48,7 @@ export default async function Page() {
     if (userData && userData.length > 0) {
       const { workStatus } = userData[0];
 
-      if (workStatus === "completed") {
+      if (workStatus === "complete") {
         redirect("/dashboard");
       } else if (workStatus === "ongoing") {
         // Do nothing, continue to render the waiting page

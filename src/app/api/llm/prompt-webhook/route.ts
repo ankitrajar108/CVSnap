@@ -154,10 +154,10 @@ export async function POST(request: Request) {
       promptsResult: updatedPromptsResult
     };
 
-    // If current workStatus is "ongoing", change it to "complete"
-    if (userData.workStatus === 'ongoing') {
+    // Only change workStatus to "complete" when ALL prompts are finished
+    if (userData.workStatus === 'ongoing' && isLastAllowedPrompt) {
       updateObject.workStatus = 'complete';
-      console.log("Work status changed from ongoing to complete");
+      console.log("Work status changed from ongoing to complete - all prompts finished");
     }
 
     console.log("updateObject:", JSON.stringify(updateObject, null, 2));
