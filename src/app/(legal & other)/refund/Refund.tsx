@@ -21,7 +21,7 @@ export default function Refund() {
           <p className="mb-4">
             <strong>1. Refund Policy </strong>
             <br />
-            At CVPHOTO, we stand behind the quality of our AI-generated
+            At CVSnap, we stand behind the quality of our AI-generated
             headshots. We offer a refund for our Professional and Executive
             plans under specific conditions. This refund policy is valid for 30
             days from the date of purchase.
@@ -50,7 +50,7 @@ export default function Refund() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              cvphoto.app/contact
+              cvsnap.app/contact
             </a>
             .<br />
             2. Provide your order number, which can be found in your purchase
@@ -76,7 +76,7 @@ export default function Refund() {
           <p className="mb-4">
             <strong>5. Right to Cancel Refund</strong>
             <br />
-            CVPHOTO reserves the right to cancel a refund if we find evidence
+            CVSnap reserves the right to cancel a refund if we find evidence
             that the user has abused our service. This includes, but is not
             limited to:
             <br />

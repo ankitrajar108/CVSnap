@@ -27,7 +27,7 @@ export default async function Page() {
       // Send email - Message to users: "Done, please wait...""
       await sendEmail({
         to: email, // Use user's email from userData
-        from: process.env.NOREPLY_EMAIL || "noreply@cvphoto.app", // Using env variable with fallback
+        from: process.env.NOREPLY_EMAIL || "noreply@cvsnap.app", // Using env variable with fallback
         templateId: "d-d966d02f4a324abeb43a1d7045da520a", // Replace with your template ID
       });
 
@@ -39,7 +39,7 @@ export default async function Page() {
 
       await sendEmail({
         to: email,
-        from: process.env.NOREPLY_EMAIL || "noreply@cvphoto.app",
+        from: process.env.NOREPLY_EMAIL || "noreply@cvsnap.app",
         templateId: "d-e937e48db4b945af9279e85baa1683e4", // Updated template ID for scheduled email
         sendAt: sendAt,
       });
